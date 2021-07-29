@@ -1,0 +1,310 @@
+{
+	"info": {
+		"_postman_id": "ea01f93b-219f-4430-87d6-5497ea79b128",
+		"name": "CRUD",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get Articles",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "created_from",
+						"value": "",
+						"type": "text"
+					},
+					{
+						"key": "created_to",
+						"value": "",
+						"type": "text"
+					},
+					{
+						"key": "user_id",
+						"value": "",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/articles",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"articles"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Get Articles Example",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "created_from",
+								"value": "",
+								"type": "text"
+							},
+							{
+								"key": "created_to",
+								"value": "",
+								"type": "text"
+							},
+							{
+								"key": "user_id",
+								"value": "1",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/articles",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"articles"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "127.0.0.1:8000"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 29 Jul 2021 16:38:25 GMT"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 29 Jul 2021 16:38:25 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.4.16"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "59"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"code\": 200,\n    \"data\": [\n        {\n            \"id\": 6,\n            \"title\": \"wqertyukl;\",\n            \"detail\": \"Unde aut alias praesentium fugit dignissimos consequuntur quod optio amet quam laudantium debitis\",\n            \"image_path\": \"http://127.0.0.1:8000/image/article_images/20210729160705.png\",\n            \"created_at\": \"2021-07-29T15:27:55.000000Z\"\n        },\n        {\n            \"id\": 7,\n            \"title\": \"Officia recusandae Qui recusandae Ratione architecto possimus quo\",\n            \"detail\": \"Repellendus Praesentium nostrud magna ipsam\",\n            \"image_path\": \"http://127.0.0.1:8000/image/article_images/20210729161059.png\",\n            \"created_at\": \"2021-07-29T16:10:59.000000Z\"\n        },\n        {\n            \"id\": 8,\n            \"title\": \"Quo consequat Do iste ullamco\",\n            \"detail\": \"Accusamus iusto vero quis ut hic\",\n            \"image_path\": \"http://127.0.0.1:8000/image/article_images/20210729161109.png\",\n            \"created_at\": \"2021-07-29T16:11:09.000000Z\"\n        },\n        {\n            \"id\": 9,\n            \"title\": \"Voluptate provident repellendus Consequatur pariatur Distinctio Ut natus\",\n            \"detail\": \"Eos eveniet commodo nemo incidunt id voluptatibus ut in voluptates aspernatur dolore voluptatem Sint\",\n            \"image_path\": \"http://127.0.0.1:8000/image/article_images/20210729161118.png\",\n            \"created_at\": \"2021-07-29T16:11:18.000000Z\"\n        }\n    ],\n    \"links\": {\n        \"first\": \"http://127.0.0.1:8000/api/articles?page=1\",\n        \"last\": \"http://127.0.0.1:8000/api/articles?page=1\",\n        \"prev\": null,\n        \"next\": null\n    },\n    \"meta\": {\n        \"current_page\": 1,\n        \"from\": 1,\n        \"last_page\": 1,\n        \"links\": [\n            {\n                \"url\": null,\n                \"label\": \"&laquo; Previous\",\n                \"active\": false\n            },\n            {\n                \"url\": \"http://127.0.0.1:8000/api/articles?page=1\",\n                \"label\": \"1\",\n                \"active\": true\n            },\n            {\n                \"url\": null,\n                \"label\": \"Next &raquo;\",\n                \"active\": false\n            }\n        ],\n        \"path\": \"http://127.0.0.1:8000/api/articles\",\n        \"per_page\": 15,\n        \"to\": 4,\n        \"total\": 4\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Single Article",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/articles/6",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"articles",
+						"6"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Single Article",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/articles/6",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"articles",
+								"6"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "127.0.0.1:8000"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 29 Jul 2021 16:40:36 GMT"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 29 Jul 2021 16:40:36 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.4.16"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "58"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"data\": {\n        \"id\": 6,\n        \"title\": \"wqertyukl;\",\n        \"detail\": \"Unde aut alias praesentium fugit dignissimos consequuntur quod optio amet quam laudantium debitis\",\n        \"image_path\": \"http://127.0.0.1:8000/image/article_images/20210729160705.png\",\n        \"created_at\": \"2021-07-29T15:27:55.000000Z\"\n    }\n}"
+				},
+				{
+					"name": "Single Article",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/articles/100",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"articles",
+								"100"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "127.0.0.1:8000"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 29 Jul 2021 16:40:55 GMT"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 29 Jul 2021 16:40:55 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.4.16"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "57"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"code\": 400,\n    \"message\": \"Article does not exists against ID# 100\"\n}"
+				}
+			]
+		}
+	]
+}
